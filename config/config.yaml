@@ -1,0 +1,27 @@
+device: 'cuda:0'
+
+
+# fed parameter
+n_round: 1000
+local_epoch: 1 # local_epoch
+n_client: 3 # n_client
+iid: False # iid
+
+
+# optimizer parameter
+#optimizer_args:
+#  lr: 1e-3
+#  momentum: 0.9
+#  weight_decay: 5e-4
+
+# 每个阶段 学习率 x 0.1
+lr_stage:
+  - 150
+  - 200
+  - 230
+
+
+save_freq: 10
+seed: 2020
+savedir: log
+
